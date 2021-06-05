@@ -38,7 +38,7 @@
   <form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="post" id="submit-answers">
     <?php foreach ($q as $no => $val) { ?>
       <li>
-        <div class="question"><?php echo $val['question'] ?></div>
+        <div class="question"><?php echo $val['question']; ?></div>
         <?php foreach ($val['answers'] as $letter => $a) {
           $label = 'question'. $no .'answer'. $letter;
         ?>
